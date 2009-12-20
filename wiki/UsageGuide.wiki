@@ -1,0 +1,48 @@
+#summary This wiki contains examples on how to use the library
+#labels Phase-Implementation,Featured
+
+= Code Usage =
+
+== The traditional way ==
+
+{{{
+	IBitlyService s = new BitlyService("youraccount", "R_XYZ");
+
+	string shortened;
+	if (s.Shorten("http://cnn.com", out shortened) == StatusCode.OK)
+	{
+		// do something with "shortened"
+	}
+
+}}}
+
+
+Or if you don't care about the return code, there is a simpler overload of the *Shorten* method:
+
+
+{{{
+	IBitlyService s = new BitlyService("youraccount", "R_XYZ");
+	
+	string shortened = s.Shorten("http://cnn.com");
+	if (shortened != null)
+	{
+		// do something with "shortened"
+	}
+}}}
+
+== The .NET MVC Way ==
+
+{{{
+	public HomeController(IBitlyService bitlyService)
+	{
+		string shortened = bitlyService.Shorten("http://cnn.com");
+	}
+}}}
+
+You can also use BitlyDotNET with an IoC Container of your choice. Please see [http://code.google.com/p/autofac/ Autofac] or [http://www.castleproject.org/container/index.html Castle Windsor Container] to learn how you can achieve such a compact setup.
+
+= Error Handling =
+
+Please refer to the documentation wiki to have a list of the exceptions that could be thrown.
+
+The WikiDocumentation is pretty complete, so I advise you to refer to it to properly handle any situation or error you may encounter when calling a particular method.
