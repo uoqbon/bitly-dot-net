@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Id="1fde970a-5765-496c-b1a3-c8d62691fa67" Title="bitlyDotNET.Interfaces Namespace" Url="html/a9f915b5-31af-4447-bebd-5f05a5c04b1e.htm">
+    <HelpTOCNode Title="eStatusCode Enumeration" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+    <HelpTOCNode Id="9abb0f95-e13d-4b75-96d5-83ee215b9fcc" Title="IBitlyService Interface" Url="html/f5dd0f9e-d36b-5d60-2a55-11871a5a33d7.htm">
+      <HelpTOCNode Title="IBitlyService Members" Url="html/4914d0fe-fc0e-aaab-b526-2d13e50cbd40.htm" />
+      <HelpTOCNode Id="522e19d7-13a1-432c-9623-bfda1f8f3d67" Title="IBitlyService Methods " Url="html/412e3c9d-42e9-050a-e765-f612aaeb7130.htm">
+        <HelpTOCNode Title="Shorten Method " Url="html/41464de2-b0ec-51ab-b221-581c82ae1125.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>

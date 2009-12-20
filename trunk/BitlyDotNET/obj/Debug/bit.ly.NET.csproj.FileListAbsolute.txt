@@ -1,0 +1,6 @@
+C:\projects\bit.ly.NET\bit.ly.NET\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\bit.ly.NET\bit.ly.NET\bin\Debug\BitlyDotNET.xml
+C:\projects\bit.ly.NET\bit.ly.NET\bin\Debug\BitlyDotNET.dll
+C:\projects\bit.ly.NET\bit.ly.NET\bin\Debug\BitlyDotNET.pdb
+C:\projects\bit.ly.NET\bit.ly.NET\obj\Debug\BitlyDotNET.dll
+C:\projects\bit.ly.NET\bit.ly.NET\obj\Debug\BitlyDotNET.pdb
