@@ -1,14 +1,13 @@
 #summary If you have problem opening the .chm file (official doc.)
 #labels Phase-Support
 
-= How to view the documentation file (.chm) =
-----
+= View the documentation file (.chm) =
 
-== Behavior ==
+== Possible issue ==
 
 Many of you will receive a "Navigation to the webpage was canceled" message when opening the documentation file.
 
-== How to view it ==
+== Resolving it ==
 
 You must unblock the content to be able to view it:
   * Right-click on the downloaded .chm file
