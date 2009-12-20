@@ -45,4 +45,4 @@ You can also use BitlyDotNET with an IoC Container of your choice. Please see [h
 
 Please refer to the documentation wiki to have a list of the exceptions that could be thrown.
 
-The WikiDocumentation is pretty complete, so I advise you to refer to it to properly handle any situation or error you may encounter when calling a particular method.
+The BitlyDotNet.chm is pretty complete, so I advise you to refer to it to properly handle any situation or error you may encounter when calling a particular method.
