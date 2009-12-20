@@ -32,14 +32,14 @@ Or if you don't care about the return code, there is a simpler overload of the *
 
 == The .NET MVC Way ==
 
+You can also use BitlyDotNET with an IoC Container of your choice. Please see [http://code.google.com/p/autofac/ Autofac] or [http://www.castleproject.org/container/index.html Castle Windsor Container] to learn how you can achieve such a compact setup:
+
 {{{
 	public HomeController(IBitlyService bitlyService)
 	{
 		string shortened = bitlyService.Shorten("http://cnn.com");
 	}
 }}}
-
-You can also use BitlyDotNET with an IoC Container of your choice. Please see [http://code.google.com/p/autofac/ Autofac] or [http://www.castleproject.org/container/index.html Castle Windsor Container] to learn how you can achieve such a compact setup.
 
 = Error Handling =
 
