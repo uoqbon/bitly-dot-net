@@ -15,24 +15,29 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <OutputPath>.\Help\</OutputPath>
-    <HtmlHelpName>bitlyDotNet Documentation</HtmlHelpName>
+    <HtmlHelpName>BitlyDotNet</HtmlHelpName>
     <SyntaxFilters>CSharp</SyntaxFilters>
     <Preliminary>False</Preliminary>
     <HelpFileFormat>HtmlHelp1x</HelpFileFormat>
     <HtmlHelp2xCompilerPath>..\..\..\Program Files\Microsoft Help 2.0 SDK\</HtmlHelp2xCompilerPath>
     <DocumentationSources>
       <DocumentationSource sourceFile="..\BitlyDotNET\bin\Debug\BitlyDotNET.dll" />
-<DocumentationSource sourceFile="..\BitlyDotNET\bin\Debug\BitlyDotNET.xml" /></DocumentationSources>
+      <DocumentationSource sourceFile="..\BitlyDotNET\bin\Debug\BitlyDotNET.xml" />
+    </DocumentationSources>
     <HelpTitle>This is the official bitlyDotNet documentation</HelpTitle>
     <NamespaceSummaries>
       <NamespaceSummaryItem name="bitlyDotNET.Interfaces" isDocumented="False" />
-<NamespaceSummaryItem name="BitlyDotNET.Exceptions" isDocumented="True">Defines possible custom exceptions this library can throw.</NamespaceSummaryItem>
-<NamespaceSummaryItem name="BitlyDotNET.Implementations" isDocumented="True">Provides default implementations of the interfaces defined in the BitlyDotNET.Interfaces namespace.</NamespaceSummaryItem>
-<NamespaceSummaryItem name="BitlyDotNET.Interfaces" isDocumented="True">Defines an easy way to communicate with the bit.ly API in .NET</NamespaceSummaryItem></NamespaceSummaries>
+      <NamespaceSummaryItem name="BitlyDotNET.Exceptions" isDocumented="True">Defines possible custom exceptions this library can throw.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="BitlyDotNET.Implementations" isDocumented="True">Provides default implementations of the interfaces defined in the BitlyDotNET.Interfaces namespace.</NamespaceSummaryItem>
+      <NamespaceSummaryItem name="BitlyDotNET.Interfaces" isDocumented="True">Defines an easy way to communicate with the bit.ly API in .NET</NamespaceSummaryItem>
+    </NamespaceSummaries>
     <RootNamespaceContainer>True</RootNamespaceContainer>
     <FeedbackEMailAddress>mikegleasonjr%40gmail.com</FeedbackEMailAddress>
-    <FeedbackEMailLinkText>Mike Gleason jr Couturier</FeedbackEMailLinkText>
+    <FeedbackEMailLinkText>
+    </FeedbackEMailLinkText>
     <RootNamespaceTitle>BitlyDotNET</RootNamespaceTitle>
+    <CopyrightText>Copyright %28c%29 2009 Mike Gleason jr Couturier</CopyrightText>
+    <CopyrightHref>http://code.google.com/p/bitly-dot-net/</CopyrightHref>
   </PropertyGroup>
   <!-- There are no properties for these two groups but they need to appear in
        order for Visual Studio to perform the build. -->
