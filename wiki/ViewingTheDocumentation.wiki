@@ -1,4 +1,6 @@
+#summary If you have problem opening the .chm file (official doc.)
 #labels Phase-Support
+
 = How to view the documentation file (.chm) =
 ----
 
