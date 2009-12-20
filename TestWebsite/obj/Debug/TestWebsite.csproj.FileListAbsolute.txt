@@ -1,0 +1,16 @@
+C:\projects\bit.ly.NET\TestWebsite\bin\TestWebsite.dll
+C:\projects\bit.ly.NET\TestWebsite\bin\TestWebsite.pdb
+C:\projects\bit.ly.NET\TestWebsite\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\bit.ly.NET\TestWebsite\obj\Debug\TestWebsite.dll
+C:\projects\bit.ly.NET\TestWebsite\obj\Debug\TestWebsite.pdb
+C:\projects\bit.ly.NET\TestWebsite\bin\BitlyDotNET.dll
+C:\projects\bit.ly.NET\TestWebsite\bin\BitlyDotNET.pdb
+C:\projects\bit.ly.NET\TestWebsite\bin\BitlyDotNET.xml
+C:\projects\BitlyDotNET\TestWebsite\bin\TestWebsite.dll
+C:\projects\BitlyDotNET\TestWebsite\bin\TestWebsite.pdb
+C:\projects\BitlyDotNET\TestWebsite\bin\BitlyDotNET.dll
+C:\projects\BitlyDotNET\TestWebsite\bin\BitlyDotNET.pdb
+C:\projects\BitlyDotNET\TestWebsite\bin\BitlyDotNET.xml
+C:\projects\BitlyDotNET\TestWebsite\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\BitlyDotNET\TestWebsite\obj\Debug\TestWebsite.dll
+C:\projects\BitlyDotNET\TestWebsite\obj\Debug\TestWebsite.pdb

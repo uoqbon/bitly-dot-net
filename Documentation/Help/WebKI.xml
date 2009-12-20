@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title="AlreadyLoggedIn enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="bitlyDotNET.Interfaces namespace" Url="html/a9f915b5-31af-4447-bebd-5f05a5c04b1e.htm" />
+  <HelpKINode Title="bitlyDotNET.Interfaces.eStatusCode enumeration" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="bitlyDotNET.Interfaces.IBitlyService interface" Url="html/4914d0fe-fc0e-aaab-b526-2d13e50cbd40.htm" />
+  <HelpKINode Title="bitlyDotNET.Interfaces.IBitlyService interface" Url="html/f5dd0f9e-d36b-5d60-2a55-11871a5a33d7.htm" />
+  <HelpKINode Title="CNAMEAlreadyAssociated enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="CNAMEIsInvalid enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="CNAMENotAuthenticated enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="CouldNotFetchJSON enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="DuplicateLinkedAccounts enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="EmailNotAvailable enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="ErrorInBatch enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="ErrorUpdatingTwitterStatus enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="eStatusCode enumeration" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="IBitlyService interface" Url="html/4914d0fe-fc0e-aaab-b526-2d13e50cbd40.htm" />
+  <HelpKINode Title="IBitlyService interface" Url="html/f5dd0f9e-d36b-5d60-2a55-11871a5a33d7.htm" />
+  <HelpKINode Title="IBitlyService interface">
+    <HelpKINode Title="about IBitlyService interface" Url="html/f5dd0f9e-d36b-5d60-2a55-11871a5a33d7.htm" />
+    <HelpKINode Title="all members" Url="html/4914d0fe-fc0e-aaab-b526-2d13e50cbd40.htm" />
+    <HelpKINode Title="methods" Url="html/412e3c9d-42e9-050a-e765-f612aaeb7130.htm" />
+  </HelpKINode>
+  <HelpKINode Title="IBitlyService.Shorten method" Url="html/41464de2-b0ec-51ab-b221-581c82ae1125.htm" />
+  <HelpKINode Title="InfoNotFoundForDocument enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InfoNotFoundForDocument2 enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidAccountType enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidBitlyHash enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidCredentials enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidEmail enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidPasswordLength enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidTwitterCredentials enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidURLOrAlreadyShort enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidUsername enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="InvalidVersion enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="KeywordInUse enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="MissingParameter enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="MissingTwitterCredentials enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="NoAccessToCNAMEVersion enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="NoMatchingLongURL enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="NotAuthenticated enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="OK enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="PageNotFound enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="PostError enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="ServiceUnavailable enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="Shorten method" Url="html/41464de2-b0ec-51ab-b221-581c82ae1125.htm" />
+  <HelpKINode Title="TextToLong enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="TrafficLookupHashFailed enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="TwitterPasswordMismatchOnBitly enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="TwitterUnavailable enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="UndefinedMethod enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="UnknownError enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="Unspecified enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+  <HelpKINode Title="UsernameNotAvailable enumeration member" Url="html/9c3b4fae-5eac-2a8a-1247-3a0476b6c80e.htm" />
+</HelpKI>

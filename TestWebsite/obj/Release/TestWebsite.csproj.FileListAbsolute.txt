@@ -1,0 +1,7 @@
+C:\projects\BitlyDotNET\TestWebsite\bin\TestWebsite.dll
+C:\projects\BitlyDotNET\TestWebsite\bin\TestWebsite.pdb
+C:\projects\BitlyDotNET\TestWebsite\bin\BitlyDotNET.dll
+C:\projects\BitlyDotNET\TestWebsite\bin\BitlyDotNET.pdb
+C:\projects\BitlyDotNET\TestWebsite\obj\Release\ResolveAssemblyReference.cache
+C:\projects\BitlyDotNET\TestWebsite\obj\Release\TestWebsite.dll
+C:\projects\BitlyDotNET\TestWebsite\obj\Release\TestWebsite.pdb

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Web Developer Express 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitlyDotNET", "BitlyDotNET\BitlyDotNET.csproj", "{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebsite", "TestWebsite\TestWebsite.csproj", "{87B9068A-E927-4BAF-99EE-D34DFC688384}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F635F2-1BB2-4DF4-9238-B5E8BFC03ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B9068A-E927-4BAF-99EE-D34DFC688384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B9068A-E927-4BAF-99EE-D34DFC688384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B9068A-E927-4BAF-99EE-D34DFC688384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B9068A-E927-4BAF-99EE-D34DFC688384}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

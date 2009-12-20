@@ -1,0 +1,5 @@
+C:\projects\BitlyDotNET\BitlyDotNET\bin\Release\BitlyDotNET.dll
+C:\projects\BitlyDotNET\BitlyDotNET\bin\Release\BitlyDotNET.pdb
+C:\projects\BitlyDotNET\BitlyDotNET\obj\Release\ResolveAssemblyReference.cache
+C:\projects\BitlyDotNET\BitlyDotNET\obj\Release\BitlyDotNET.dll
+C:\projects\BitlyDotNET\BitlyDotNET\obj\Release\BitlyDotNET.pdb
