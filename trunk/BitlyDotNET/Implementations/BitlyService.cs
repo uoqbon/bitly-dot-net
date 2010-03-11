@@ -33,6 +33,8 @@ using System.Xml;
 using System.Xml.Linq;
 using BitlyDotNET.Exceptions;
 using BitlyDotNET.Interfaces;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BitlyDotNET.Implementations
 {
@@ -120,52 +122,13 @@ namespace BitlyDotNET.Implementations
 		/// </remarks>
 		public StatusCode Shorten(string url, out string shortened)
 		{
-			if (url == null)
-				throw new ArgumentNullException("url");
-
-			if (!Uri.IsWellFormedUriString(url, UriKind.Absolute))
-				throw new ArgumentException("Invalid absolute URL", "url");
-
-			string method = "/shorten?longUrl={0}&login={1}&apiKey={2}&version={3}&format=xml&history=1";
-			XDocument response = null;
-			XElement errorCode, shortUrl = null;
-			shortened = null;
-
-			try
-			{
-				// Load the XML document from the REST URL
-				response = XDocument.Load(ApiRestUrl + String.Format(method, HttpUtility.UrlEncode(url), HttpUtility.UrlEncode(Login), HttpUtility.UrlEncode(ApiKey), ApiVersion));
-			}
-			catch (SecurityException e)
-			{
-				throw new BitlyDotNETException(Reason.CallForbidden, "The local reader does not have sufficient permissions to access the location of the data.", e);
-			}
-			catch (FileNotFoundException e)
-			{
-				throw new BitlyDotNETException(Reason.MethodNotFound, "The file identified by the url does not exist.", e);
-			}
-			catch (XmlException e)
-			{
-				throw new BitlyDotNETException(Reason.UnableToParseResponse, "An error occurred while parsing the response.", e);
-			}
-
-			// Try to retreive the error code from the XML response
-			errorCode = response.Descendants("errorCode").SingleOrDefault();
-			if (errorCode == null || !Enum.IsDefined(typeof(StatusCode), (int)errorCode))
-				throw new BitlyDotNETException(Reason.UnableToParseResponse, "Unable to extract \"errorCode\"");
-
-			// If the call was unsuccessful, look no further
-			if ((StatusCode)(int)errorCode != StatusCode.OK)
-				return (StatusCode)(int)errorCode;
-
-			// Try to retreive the short URL generated for us
-			shortUrl = response.Descendants("shortUrl").SingleOrDefault();
-			if (shortUrl == null || String.IsNullOrEmpty((string)shortUrl))
-				throw new BitlyDotNETException(Reason.UnableToParseResponse, "Unable to extract \"shortUrl\"");
-
-			// Return the URL and OK
-			shortened = shortUrl.Value;
-			return StatusCode.OK;
+            StatusCode statusCode;
+            var shortUrls = Shorten(new string[] { url }, out statusCode);
+            if (statusCode == StatusCode.OK && shortUrls.Count() == 1)
+                shortened = shortUrls.First().ShortUrl;
+            else
+                shortened = string.Empty;
+            return statusCode;
 		}
 
 		/// <summary>
@@ -193,6 +156,90 @@ namespace BitlyDotNET.Implementations
 
 			return null;
 		}
+
+        private string GetShortenUrl(string[] longUrls)
+        {
+            StringBuilder urlBuilder = new StringBuilder();
+            urlBuilder.Append(ApiRestUrl);
+            urlBuilder.Append("/shorten?");
+            urlBuilder.Append("login=");
+            urlBuilder.Append(HttpUtility.UrlEncode(Login));
+            urlBuilder.Append("&apiKey=");
+            urlBuilder.Append(HttpUtility.UrlEncode(ApiKey));
+            urlBuilder.Append("&version=");
+            urlBuilder.Append(HttpUtility.UrlEncode(ApiVersion));
+            urlBuilder.Append("&format=xml&history=1");
+
+            foreach (var url in longUrls)
+            {
+                urlBuilder.Append("&longUrl=");
+                urlBuilder.Append(HttpUtility.UrlEncode(url));
+            }
+
+            string method = urlBuilder.ToString();
+            return method;
+        }
+        public IBitlyResponse[] Shorten(string[] longUrls, out StatusCode statusCode)
+        {
+            if (longUrls == null)
+                throw new ArgumentNullException("url");
+
+            if (longUrls.Any(url => !Uri.IsWellFormedUriString(url, UriKind.Absolute)))
+                throw new ArgumentException("Invalid absolute URL", "url");
+
+            string method = GetShortenUrl(longUrls);
+            
+            XDocument response = null;
+            //XElement errorCode, shortUrl = null;
+
+            try
+            {
+                // Load the XML document from the REST URL
+                response = XDocument.Load(method);
+            }
+            catch (SecurityException e)
+            {
+                throw new BitlyDotNETException(Reason.CallForbidden, "The local reader does not have sufficient permissions to access the location of the data.", e);
+            }
+            catch (FileNotFoundException e)
+            {
+                throw new BitlyDotNETException(Reason.MethodNotFound, "The file identified by the url does not exist.", e);
+            }
+            catch (XmlException e)
+            {
+                throw new BitlyDotNETException(Reason.UnableToParseResponse, "An error occurred while parsing the response.", e);
+            }
+
+            // Try to retreive the error code from the XML response
+            var errorCode = response.Descendants("errorCode").FirstOrDefault();
+            if (errorCode == null || !Enum.IsDefined(typeof(StatusCode), (int)errorCode))
+                throw new BitlyDotNETException(Reason.UnableToParseResponse, "Unable to extract \"errorCode\"");
+
+            // If the call was unsuccessful, look no further
+            statusCode = (StatusCode)(int)errorCode;
+            if (statusCode != StatusCode.OK)
+                return new IBitlyResponse[0];
+
+            // Try to retreive the short URLs generated for us
+            var shortUrlList = new List<IBitlyResponse>();
+            var results = response.Descendants("nodeKeyVal");
+            if (results == null)
+                throw new BitlyDotNETException(Reason.UnableToParseResponse, "Unable to extract \"results\"");
+            foreach (var node in results)
+            {
+                var nodeError = node.Descendants("errorCode").SingleOrDefault();
+                var longUrl = node.Descendants("nodeKey").SingleOrDefault();
+                var shortenedUrl = node.Descendants("shortUrl").SingleOrDefault();
+
+                shortUrlList.Add(new BitlyResponse()
+                {
+                    StatusCode = nodeError == null ? StatusCode.OK : (StatusCode)(int)nodeError,
+                    LongUrl = (string)longUrl,
+                    ShortUrl = (string)shortenedUrl
+                });
+            }
+            return shortUrlList.ToArray();
+        }
 	
 		#endregion
 	}
