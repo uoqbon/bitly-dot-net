@@ -48,7 +48,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\BitlyDotNETException.cs" />
+    <Compile Include="Implementations\BitlyResponse.cs" />
     <Compile Include="Implementations\BitlyService.cs" />
+    <Compile Include="Interfaces\IBitlyResponse.cs" />
     <Compile Include="Interfaces\IBitlyService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

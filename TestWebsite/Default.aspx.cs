@@ -24,8 +24,10 @@
  * 
  */
 using System;
-using BitlyDotNET.Implementations;
+
 using BitlyDotNET.Interfaces;
+using BitlyDotNET.Implementations;
+using System.Collections.Generic;
 
 namespace TestWebsite
 {
@@ -33,9 +35,10 @@ namespace TestWebsite
 	{
 		protected void Page_Load(object sender, EventArgs e)
 		{
-			BitlyService s = new BitlyService("youraccount", "R_XYZ");
+            BitlyService s = new BitlyService("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07");
 			string shortened;
 			StatusCode status = s.Shorten("http://cnn.com", out shortened);
+            IBitlyResponse[] shortUrls = s.Shorten(new string[] { "http://cnn.com", "http://google.com" }, out status);
 		}
 	}
 }

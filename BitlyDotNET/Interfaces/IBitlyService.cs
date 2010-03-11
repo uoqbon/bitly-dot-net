@@ -25,6 +25,7 @@
  * 
  */
 using System;
+using System.Collections.Generic;
 
 namespace BitlyDotNET.Interfaces
 {
@@ -75,6 +76,10 @@ namespace BitlyDotNET.Interfaces
 		/// There was a problem posting your request. Please try again.
 		/// </summary>
 		PostError = 207,
+        /// <summary>
+        /// You have exceeded your hourly rate limit for this method.
+        /// </summary>
+        RateLimitExceeded = 208,
 		/// <summary>
 		/// That page does not exist.
 		/// </summary>
@@ -234,6 +239,14 @@ namespace BitlyDotNET.Interfaces
 		/// </para>
 		/// </remarks>
 		string Shorten(string url);
+
+        /// <summary>
+        /// Encodes multiple long URLs as shorter ones
+        /// </summary>
+        /// <param name="longUrls">An array of urls to shorten</param>
+        /// <param name="statusCode">The <see cref="StatusCode">status code</see> returned by the request</param>
+        /// <returns>An array of responses (should be in the same order they were received)</returns>
+        IBitlyResponse[] Shorten(string[] longUrls, out StatusCode statusCode);
 
 		#endregion
 	}
